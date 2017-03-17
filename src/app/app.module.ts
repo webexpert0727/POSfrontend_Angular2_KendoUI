@@ -1,25 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AppComponent } from './app.component';
+import {NgModule} from '@angular/core';
 
-// Import the ButtonsModule...
-import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import {CoreModule} from './core/core.module';
+import {SharedModule} from './shared/shared.module';
+import {AppComponent} from './app.component';
+import {AuthModule} from './auth/auth.module';
 
 @NgModule({
     declarations: [
         AppComponent
     ],
     imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-
-        // ... and register it
-        ButtonsModule
+        AuthModule,
+        CoreModule,
+        SharedModule
     ],
     providers: [],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

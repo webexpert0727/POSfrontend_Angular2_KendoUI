@@ -1,3 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import "~@progress/kendo-theme-default/scss/all";
+
+body {
+  background-color: #4A4F5C !important;
+  color: #fff !important;
+}
+
+.field-list {
+  text-align: center;
+  margin: 0 0 -2em;
+  padding: 0;
+  li {
+    list-style: none;
+    padding-bottom: 2em;
+  }
+
+  .form-element {
+    width: 70%;
+    height: 40px;
+    .text {
+      font-weight: bold;
+      color: #fff;
+
+    }
+
+    a.text {
+      &:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  img {
+    width: 180px;
+    height: 180px
+  }
+
+  .align-left {
+    width: 41%
+  }
+}
