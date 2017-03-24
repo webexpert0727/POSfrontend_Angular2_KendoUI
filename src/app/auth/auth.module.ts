@@ -4,6 +4,7 @@ import {LoginComponent} from './login/login.component';
 import {AuthService} from './auth.service';
 import {RouterModule} from '@angular/router';
 import {authRoutes} from './authRoutes';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
     imports: [
@@ -13,7 +14,7 @@ import {authRoutes} from './authRoutes';
     providers: [
         AuthService
     ],
-    declarations: [LoginComponent]
+    declarations: [LoginComponent, ForgotPasswordComponent]
 })
 export class AuthModule {
 }
