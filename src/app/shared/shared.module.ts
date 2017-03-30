@@ -6,6 +6,8 @@ import {HttpModule} from '@angular/http';
 import {ButtonsModule} from '@progress/kendo-angular-buttons';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
+import {RecaptchaModule} from 'ng-recaptcha';
+import {RecaptchaFormsModule} from 'ng-recaptcha/forms';
 
 @NgModule({
     declarations: [],
@@ -14,16 +16,21 @@ import {RouterModule} from '@angular/router';
         RouterModule,
         FormsModule,
         HttpModule,
+        RecaptchaModule.forRoot(),
+        RecaptchaFormsModule,
         // ... and register it
         ButtonsModule
     ],
     providers: [],
     bootstrap: [],
     exports: [
+        RecaptchaFormsModule,
         CommonModule,
         FormsModule,
         HttpModule,
         RouterModule,
+        RecaptchaModule,
+
         // ... and register it
         ButtonsModule
     ]
