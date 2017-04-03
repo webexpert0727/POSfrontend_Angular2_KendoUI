@@ -40,4 +40,10 @@ export class AuthService {
         }
         return !!this.token;
     }
+
+    public logout() {
+        localStorage.removeItem(this.storageKey);
+        this.token = null;
+        this.router.navigate(['auth/login']);
+    }
 }
