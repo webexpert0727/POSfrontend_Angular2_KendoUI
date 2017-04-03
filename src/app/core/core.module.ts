@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {coreRoutes} from './coreRoutes';
 import {constants} from './constants';
+import {MockHttpService} from './services/mock-http.service';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import {constants} from './constants';
 
     ],
     providers: [
-        {provide: 'siteConstants', useValue: constants}
+        {provide: 'siteConstants', useValue: constants},
+        MockHttpService
     ],
     bootstrap: []
 })
