@@ -3,6 +3,7 @@ import {LoginForm} from './login/login-form';
 import {MockHttpService} from '../core/services/mock-http.service';
 import {Response} from '@angular/http';
 import {Observable} from 'rxjs';
+import {Router} from '@angular/router';
 
 @Injectable()
 export class AuthService {
@@ -11,8 +12,9 @@ export class AuthService {
     readonly storageKey = 'token';
 
     private token: string;
+    public redirectUrl = '/';
 
-    constructor(private http: MockHttpService) {
+    constructor(private http: MockHttpService, private router: Router) {
     }
 
     private extractData(res: Response): any {
@@ -27,7 +29,7 @@ export class AuthService {
                 if (form.remember) {
                     localStorage.setItem(this.storageKey, this.token);
                 }
-                console.log('redirect to dashboard')
+                this.router.navigate([this.redirectUrl]);
             })
             .catch((res: Response) => Observable.throw(this.extractData(res)));
     }

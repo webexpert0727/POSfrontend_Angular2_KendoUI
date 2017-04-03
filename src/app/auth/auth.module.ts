@@ -5,6 +5,7 @@ import {AuthService} from './auth.service';
 import {RouterModule} from '@angular/router';
 import {authRoutes} from './authRoutes';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import {AuthGuard} from './guards/auth.guard';
 
 @NgModule({
     imports: [
@@ -12,7 +13,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
         RouterModule.forChild(authRoutes)
     ],
     providers: [
-        AuthService
+        AuthService,
+        AuthGuard
     ],
     declarations: [LoginComponent, ForgotPasswordComponent]
 })
