@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
+import {SidebarService} from '../services/sidebar.service';
 
 @Component({
     selector: 'app-dashboard-layout',
-    templateUrl: './dashboard-layout.component.html',
-    styleUrls: ['./dashboard-layout.component.scss']
+    templateUrl: './dashboard-layout.component.html'
 })
 export class DashboardLayoutComponent implements OnInit {
 
-    constructor() {
+    constructor(private sidebarService: SidebarService) {
     }
 
     ngOnInit() {

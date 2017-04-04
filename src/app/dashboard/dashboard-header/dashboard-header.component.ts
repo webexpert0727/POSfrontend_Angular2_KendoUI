@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from '../../auth/auth.service';
+import {SidebarService} from '../services/sidebar.service';
 
 @Component({
     selector: 'app-dashboard-header',
@@ -7,14 +8,9 @@ import {AuthService} from '../../auth/auth.service';
 })
 export class DashboardHeaderComponent implements OnInit {
 
-    constructor(public authService:AuthService) {
+    constructor(public authService:AuthService, public sidebarService:SidebarService) {
     }
 
     ngOnInit() {
     }
-
-    logout() {
-
-    }
-
 }

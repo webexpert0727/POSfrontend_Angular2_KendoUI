@@ -3,11 +3,6 @@ body {
   color: #fff !important;
 }
 
-nav {
-  a {
-    cursor: pointer;
-    &:hover {
-      text-decoration: none;
-    }
-  }
+.sidebar-form {
+  margin: 10px;
 }

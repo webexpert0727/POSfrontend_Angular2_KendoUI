@@ -1,6 +1,9 @@
-<li>
-    <span (click)="opened = !opened">{{ title }}</span>
-    <ul *ngIf="opened">
-        <ng-content></ng-content>
-    </ul>
+<li [ngClass]="{active: opened}" class="treeview">
+    <a href="#" (click)="toggle()">
+        <ng-content select="[header]"></ng-content>
+        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+    </a>
+    <ng-content select="[body]"></ng-content>
 </li>

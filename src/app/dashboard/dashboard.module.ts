@@ -7,7 +7,8 @@ import {DashboardLayoutComponent} from './dashboard-layout/dashboard-layout.comp
 import {DashboardSideBarComponent} from './dashboard-sidebar/dashboard-sidebar.component';
 import {DashboardHeaderComponent} from './dashboard-header/dashboard-header.component';
 import {DashboardFooterComponent} from './dashboard-footer/dashboard-footer.component';
-import {ParentElementComponent} from './dashboard-sidebar/sidebar-parent-element/sidebar-parent-element.component';
+import {SidebarParentElementComponent} from './dashboard-sidebar/sidebar-parent-element/sidebar-parent-element.component';
+import {SidebarService} from './services/sidebar.service';
 
 @NgModule({
     imports: [
@@ -20,7 +21,10 @@ import {ParentElementComponent} from './dashboard-sidebar/sidebar-parent-element
         DashboardSideBarComponent,
         DashboardHeaderComponent,
         DashboardFooterComponent,
-        ParentElementComponent
+        SidebarParentElementComponent
+    ],
+    providers: [
+        SidebarService
     ]
 })
 export class DashboardModule {

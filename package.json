@@ -27,10 +27,12 @@
     "@angular/router": "^3.4.0",
     "@progress/kendo-angular-buttons": "^0.20.1",
     "@progress/kendo-theme-default": "^2.12.24",
+    "admin-lte": "^2.3.11",
     "angular2-fontawesome": "^0.8.0",
     "bootstrap-sass": "^3.3.7",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "kendo-ui-core": "^2017.1.330",
     "ng-recaptcha": "^2.0.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.7.6"

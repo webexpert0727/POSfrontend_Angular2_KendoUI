@@ -20,7 +20,9 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../node_modules/kendo-ui-core/css/web/kendo.metroblack.less",
+        "../node_modules/admin-lte/dist/css/AdminLTE.css"
       ],
       "addons": [
         "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"

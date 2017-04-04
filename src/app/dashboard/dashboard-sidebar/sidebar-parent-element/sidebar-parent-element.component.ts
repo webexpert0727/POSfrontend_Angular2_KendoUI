@@ -1,18 +1,21 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-    selector: 'app-parent-element',
+    selector: 'app-sidebar-parent-element',
     templateUrl: './sidebar-parent-element.component.html'
 })
-export class ParentElementComponent implements OnInit {
+export class SidebarParentElementComponent implements OnInit {
 
     opened: boolean = false;
-    @Input() title: string;
 
     constructor() {
     }
 
-    ngOnInit() {
+    toggle() {
+        console.log(this.opened);
+        this.opened = !this.opened;
     }
 
+    ngOnInit() {
+    }
 }
