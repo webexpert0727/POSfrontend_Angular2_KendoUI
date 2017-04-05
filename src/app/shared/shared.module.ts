@@ -6,9 +6,10 @@ import {RouterModule} from '@angular/router';
 import {ButtonsModule} from '@progress/kendo-angular-buttons';
 import {RecaptchaModule} from 'ng-recaptcha';
 import {RecaptchaFormsModule} from 'ng-recaptcha/forms';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
-    declarations: [],
+    declarations: [DropdownComponent],
     imports: [
         CommonModule,
         RouterModule,
@@ -28,9 +29,8 @@ import {RecaptchaFormsModule} from 'ng-recaptcha/forms';
         HttpModule,
         RouterModule,
         RecaptchaModule,
-
-        // ... and register it
-        ButtonsModule
+        ButtonsModule,
+        DropdownComponent
     ]
 })
 export class SharedModule {
