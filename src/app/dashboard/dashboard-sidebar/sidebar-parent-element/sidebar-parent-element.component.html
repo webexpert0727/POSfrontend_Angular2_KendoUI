@@ -1,9 +1,9 @@
-<li [ngClass]="{active: opened}" class="treeview">
+<li [ngClass]="{active: opened && !sidebarService.toggled}" class="treeview">
     <a href="#" (click)="toggle()">
-        <ng-content select="[header]"></ng-content>
+        <ng-content select="[data-header]"></ng-content>
         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
     </a>
-    <ng-content select="[body]"></ng-content>
+    <ng-content select="[data-body]"></ng-content>
 </li>

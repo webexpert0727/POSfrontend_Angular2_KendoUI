@@ -1,4 +1,4 @@
-<div class="wrapper k-content sidebar-mini skin-black" [ngClass]="{'sidebar-collapse': sidebarService.toggled}">
+<div class="wrapper k-content sidebar-mini skin-black" [ngClass]="{'sidebar-collapse': sidebarService.toggled, 'sidebar-open': !sidebarService.toggled}">
     <app-dashboard-header></app-dashboard-header>
     <app-dashboard-sidebar></app-dashboard-sidebar>
     <router-outlet></router-outlet>

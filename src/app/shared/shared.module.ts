@@ -1,11 +1,9 @@
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-
-// Import the ButtonsModule...
-import {ButtonsModule} from '@progress/kendo-angular-buttons';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
+import {ButtonsModule} from '@progress/kendo-angular-buttons';
 import {RecaptchaModule} from 'ng-recaptcha';
 import {RecaptchaFormsModule} from 'ng-recaptcha/forms';
 

@@ -8,7 +8,7 @@ import {SidebarService} from '../services/sidebar.service';
 })
 export class DashboardHeaderComponent implements OnInit {
 
-    constructor(public authService:AuthService, public sidebarService:SidebarService) {
+    constructor(public authService: AuthService, public sidebarService: SidebarService) {
     }
 
     ngOnInit() {
